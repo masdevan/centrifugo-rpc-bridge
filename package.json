@@ -1,0 +1,12 @@
+{
+  "name": "rpc-bridge",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.x",
+    "dotenv": "^17.x",
+    "express": "^5.x"
+  }
+}
