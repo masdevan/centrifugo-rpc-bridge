@@ -14,7 +14,7 @@ const INSTANCES = {
 
 app.post("/rpc", async (req, res) => {
     try {
-        const instance = req.body.instance;
+        const instance = req.body.instance || req.body.data?.instance;
 
         if (!instance) {
             return res.status(400).json({
